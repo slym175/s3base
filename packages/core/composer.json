@@ -1,0 +1,32 @@
+{
+    "name": "s3base/core",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Slym175",
+            "email": "thuyhu9876@gmail.com"
+        }
+    ],
+    "require": {
+        "opis/closure": "^3.6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "S3base\\Core\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "S3base\\Core\\CoreServiceProvider"
+            ],
+            "aliases": {
+                "Hook": "S3base\\Core\\Facades\\Hook",
+                "ModelType": "S3base\\Core\\Facades\\ModelType",
+                "AdminMenu": "S3base\\Core\\Facades\\AdminMenu"
+            }
+        }
+    }
+}
